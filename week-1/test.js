@@ -42,8 +42,18 @@
 // console.log(user1["firstname"])
 
 // Functions
-function sum(a,b){
-   return a+b;
-}
-const value= sum(1,2)
-console.log(value)
+// function sum(a,b){
+//    return a+b;
+// }
+// const value= sum(1,2)
+// console.log(value)
+function greet(name, callback) {
+   console.log('Hello ' + name);
+   callback();
+ }
+ 
+ function sayGoodbye() {
+   console.log('Goodbye!');
+ }
+ 
+ greet('Alice', sayGoodbye);
