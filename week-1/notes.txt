@@ -1,0 +1,3 @@
+// Javascript interpreted language hai iska mtlb ki ki har line ek ke bd ek execute hoga .
+// C++ - Complied language hai iska mtlb ki pura code phle binary me convert hoga phir uske bd execute hoga.
+// js single threaded language hai 
