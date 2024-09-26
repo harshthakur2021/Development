@@ -47,13 +47,76 @@
 // }
 // const value= sum(1,2)
 // console.log(value)
-function greet(name, callback) {
-   console.log('Hello ' + name);
-   callback();
- }
+// function greet(name, callback) {
+//    console.log('Hello ' + name);
+//    callback();
+//  }
  
- function sayGoodbye() {
-   console.log('Goodbye!');
- }
+//  function sayGoodbye() {
+//    console.log('Goodbye!');
+//  }
  
- greet('Alice', sayGoodbye);
+//  greet('Alice', sayGoodbye);
+
+// Async And Sync Function in Js
+// function greet() {
+//   console.log("Hello, there!");
+// }
+
+// setTimeout(greet, 2000);
+// console.log("This message will appear first.");
+
+// Promises
+// let p= new Promise(function(resolve){
+//   resolve("heyy")
+// });
+// p.then(function(){
+//   console.log(p);
+// })
+
+// Asyns & Await function in Js
+
+// async function getData(){
+
+//   setTimeout (function(){
+//     console.log("Hey there Myself Harsh Thakur")
+//   },3000);
+// }
+
+// let output= getData();
+// console.log(output);
+
+// await - ?
+
+// Fetch Api
+
+// async function getData(){
+//   // get request -async
+//   let response=  await fetch('https://jsonplaceholder.typicode.com/posts/',{
+//       method: "GET"
+//   })
+//   // parse json- async
+//   let data= await response.json();
+//   console.log(data);
+// }
+// //     
+// getData();
+
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+const url = "https://example.org/post"
+
+const options ={
+  method: "POST",
+  body: JSON.stringify({ username: "example" }),
+  headers: myHeaders,
+}
+async function getData(){
+  const response = await fetch(url,options);
+  let data= await response.json();
+  console.log(data);
+}
+ getData(); 
+
+

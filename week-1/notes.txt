@@ -1,3 +1,25 @@
 // Javascript interpreted language hai iska mtlb ki ki har line ek ke bd ek execute hoga .
 // C++ - Complied language hai iska mtlb ki pura code phle binary me convert hoga phir uske bd execute hoga.
 // js single threaded language hai 
+
+
+// Async and Sync Concept
+
+async await ka use krke ap async code ko bhi sync execute kra skta hai
+Mtlb ki ap synchonous behaviour provide kr skte hai..
+aynsc function hmsea ek promise return krega
+
+Fetch Api
+
+Request Types-:
+1. Get- Jb ap koi data retrive krna chahte hai
+2. Post- jb ap koi data create krna chahta hai, push krna chahte hai.
+3. Put- Jb ap koi data existence resources ko update krna chahte hai.
+4. Delete- Jb ap koi data remove krna chahte hai.
+
+// Scenario:
+// prepare url/ api endpoint -> sync
+// Await// fetch data -> network call -> async
+// process data -> sync
+
+particular api json return krta hai.. json means javascript object notation...
