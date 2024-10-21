@@ -102,21 +102,5 @@
 // //     
 // getData();
 
-const myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-
-const url = "https://example.org/post"
-
-const options ={
-  method: "POST",
-  body: JSON.stringify({ username: "example" }),
-  headers: myHeaders,
-}
-async function getData(){
-  const response = await fetch(url,options);
-  let data= await response.json();
-  console.log(data);
-}
- getData(); 
 
 
